@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubShoes Brand Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'RF Dewi', 'Inter', sans-serif; 
+            background-color: #F9F9F9; /* Фоновый серый */
+            color: #1F1F1F; /* Основной черный */
+        }
+        
+        .font-expanded { font-family: 'RF Dewi Expanded', 'Arial Black', sans-serif; }
+        .font-condensed { font-family: 'RF Dewi Condensed', 'Arial Narrow', sans-serif; }
+
+        .color-card { transition: all 0.2s ease; }
+        .color-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #1F1F1F;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px;
+            position: fixed;
+            z-index: 50;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="bg-white border-b border-[#DDDDDD] py-10">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold uppercase font-expanded tracking-wide">ClubShoes</h1>
+                <p class="text-[#6B6B6B] mt-1">Brand Guide</p>
+            </div>
+            <img src="Logo/Avatar.png" alt="Icon" class="h-12 w-12 object-contain">
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 max-w-6xl">
+
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-8 border-b border-[#DDDDDD] pb-4 font-expanded uppercase">Логотипы</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl border border-[#DDDDDD] flex flex-col items-center">
+                    <div class="flex-grow flex items-center justify-center w-full h-48 mb-4">
+                        <img src="Logo\B&R.png" alt="Logo Black & Red" class="max-h-24 max-w-full object-contain">
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#DDDDDD] pt-4">
+                        <span class="text-sm text-[#6B6B6B]">Основной (Black & Red)</span>
+                        <a href="https://drive.google.com/file/d/10T2hK4Stuj59S73pcWB6IJUWWTeFZfVP/view?usp=drive_link" download class="text-xs bg-[#F9F9F9] px-3 py-1 rounded border border-[#DDDDDD] hover:bg-[#DDDDDD] transition">Скачать</a>
+                    </div>
+                </div>
+
+                <div class="bg-[#1F1F1F] p-8 rounded-xl border border-[#1F1F1F] flex flex-col items-center">
+                    <div class="flex-grow flex items-center justify-center w-full h-48 mb-4">
+                        <img src="Logo\W&R.png" alt="Logo White & Red" class="max-h-24 max-w-full object-contain">
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#6B6B6B] pt-4">
+                        <span class="text-sm text-[#DDDDDD]">Инверсия (White & Red)</span>
+                        <a href="https://drive.google.com/file/d/1bAB0Q5-fYWHLYfIvazs5x3-XS-a2uAgU/view?usp=drive_link" download class="text-xs bg-[#333] text-white px-3 py-1 rounded hover:bg-[#555] transition">Скачать</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-[#DDDDDD] flex flex-col items-center">
+                    <div class="flex-grow flex items-center justify-center w-full h-32 mb-4">
+                        <img src="Logo\B.png" alt="Logo Black" class="max-h-16 max-w-full object-contain">
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#DDDDDD] pt-4">
+                        <span class="text-sm text-[#6B6B6B]">Монохром (Black)</span>
+                        <a href="https://drive.google.com/file/d/1IZ0npRJC3iLC18zdKMTcBCiaBiHlrUqY/view?usp=drive_link" download class="text-xs bg-[#F9F9F9] px-3 py-1 rounded border border-[#DDDDDD] hover:bg-[#DDDDDD] transition">Скачать</a>
+                    </div>
+                </div>
+
+                <div class="bg-[#D1202C] p-8 rounded-xl flex flex-col items-center">
+                    <div class="flex-grow flex items-center justify-center w-full h-32 mb-4">
+                        <img src="Logo\W.png" alt="Logo White" class="max-h-16 max-w-full object-contain">
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-white/30 pt-4">
+                        <span class="text-sm text-white">Монохром (White)</span>
+                        <a href="https://drive.google.com/file/d/1e00O1ULLcWpRdC2BFY351KG6KS46byQg/view?usp=drive_link" download class="text-xs bg-white/20 text-white px-3 py-1 rounded hover:bg-white/30 transition">Скачать</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-[#DDDDDD] flex flex-col items-center md:col-span-2">
+                    <div class="flex-grow flex items-center justify-center w-full h-32 mb-4">
+                        <img src="Logo\Icon.png" alt="Icon" class="max-h-24 max-w-full object-contain">
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#DDDDDD] pt-4">
+                        <span class="text-sm text-[#6B6B6B]">Знак / Favicon</span>
+                        <a href="https://drive.google.com/file/d/1H_PO_iISjhTbeMW25hbbVUFNxL046FWf/view?usp=drive_link" download class="text-xs bg-[#F9F9F9] px-3 py-1 rounded border border-[#DDDDDD] hover:bg-[#DDDDDD] transition">Скачать</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-8 border-b border-[#DDDDDD] pb-4 font-expanded uppercase">Цветовая палитра</h2>
+            <p class="text-[#6B6B6B] mb-6">Нажмите на карточку цвета, чтобы скопировать HEX-код.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#D1202C', 'Main Red')">
+                    <div class="h-24 w-full bg-[#D1202C]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Main Red</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#D1202C]">#D1202C</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#991C24', 'Add. Red')">
+                    <div class="h-24 w-full bg-[#991C24]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Add. Red</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#991C24]">#991C24</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#1F1F1F', 'Main Black')">
+                    <div class="h-24 w-full bg-[#1F1F1F]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Main Black</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#1F1F1F]">#1F1F1F</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#6B6B6B', 'Add. Black')">
+                    <div class="h-24 w-full bg-[#6B6B6B]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Add. Black</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#6B6B6B]">#6B6B6B</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#DDDDDD', 'Border Website')">
+                    <div class="h-24 w-full bg-[#DDDDDD]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Border Website</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#1F1F1F]">#DDDDDD</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#F9F9F9', 'Background')">
+                    <div class="h-24 w-full bg-[#F9F9F9] flex items-center justify-center text-[#DDDDDD] text-xs"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">Background</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#1F1F1F]">#F9F9F9</p>
+                    </div>
+                </div>
+
+                <div class="color-card bg-white rounded-lg border border-[#DDDDDD] overflow-hidden cursor-pointer group" onclick="copyColor('#FFFFFF', 'White')">
+                    <div class="h-24 w-full bg-[#FFFFFF] border-b border-[#F9F9F9]"></div>
+                    <div class="p-3">
+                        <p class="font-bold text-xs uppercase text-[#1F1F1F]">White</p>
+                        <p class="text-[#6B6B6B] text-xs font-mono mt-1 group-hover:text-[#1F1F1F]">#FFFFFF</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 border-b border-[#DDDDDD] pb-4 font-expanded uppercase">Типографика</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl border border-[#DDDDDD] flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#D1202C] uppercase tracking-wider mb-2 block">Заголовки / Акценты</span>
+                        <h3 class="text-4xl font-expanded mb-4">RF Dewi Expanded</h3>
+                        <p class="text-[#6B6B6B] text-sm mb-6">Используется для крупных заголовков, баннеров, важного текста.</p>
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#DDDDDD] pt-4 mt-2">
+                        <span class="text-sm text-[#6B6B6B] truncate pr-2">RF Dewi Expanded</span>
+                        <a href="https://drive.google.com/drive/folders/1LAFyCdttZhJH-w1_vMxHbPUPRJqHLnHs?usp=drive_link" download class="text-xs bg-[#F9F9F9] px-3 py-1 rounded border border-[#DDDDDD] hover:bg-[#DDDDDD] transition whitespace-nowrap">Скачать</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-[#DDDDDD] flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-[#6B6B6B] uppercase tracking-wider mb-2 block">Текстовые блоки / Интерфейс</span>
+                        <h3 class="text-4xl font-condensed mb-4">RF Dewi</h3>
+                        <p class="text-[#6B6B6B] text-sm mb-6">Используется для набора длинных текстов, таблиц, технических описаний.</p>
+                    </div>
+                    <div class="w-full flex justify-between items-center border-t border-[#DDDDDD] pt-4 mt-2">
+                        <span class="text-sm text-[#6B6B6B] truncate pr-2">RF Dewi</span>
+                        <a href="https://drive.google.com/drive/folders/1LAFyCdttZhJH-w1_vMxHbPUPRJqHLnHs?usp=drive_link" download class="text-xs bg-[#F9F9F9] px-3 py-1 rounded border border-[#DDDDDD] hover:bg-[#DDDDDD] transition whitespace-nowrap">Скачать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toast" class="toast">Код скопирован!</div>
+
+    <script>
+        function copyColor(hex, name) {
+            navigator.clipboard.writeText(hex).then(function() {
+                showToast(`${name} (${hex}) скопирован!`);
+            }, function(err) {
+                console.error('Ошибка: ', err);
+            });
+        }
+
+        function showToast(message) {
+            var toast = document.getElementById("toast");
+            toast.innerText = message;
+            toast.className = "toast show";
+            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+        }
+    </script>
+</body>
+</html>
